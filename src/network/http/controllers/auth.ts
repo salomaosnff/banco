@@ -16,7 +16,7 @@ router.post("/", async (req, res) => {
   } catch (error) {
     res
       .status(401)
-      .json({ name: "AuthError", message: `Usuário não autenticado!` });
+      .json({ name: "AuthError", message: `CPF e/ou senha inválidos!` });
   }
 });
 
